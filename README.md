@@ -1,10 +1,17 @@
 === Admin Collapse Subpages ===
+
 Contributors:  bravokeyl ,lupka 
+
 Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
+
 Requires at least: 3.0
+
 Tested up to: 3.8.1
+
 Stable tag: trunk
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Using this plugin one can easily collapse/expand pages with children and grand children.
