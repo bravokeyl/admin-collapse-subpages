@@ -44,8 +44,9 @@ jQuery().ready(function($){
 			
 			var id = jQuery(this).find('[name="post[]"]').attr('value');
 	
-			if(jQuery('#the-list').find('[data-parent="' + id + '"]').size() > 0)
-				jQuery(this).find('.page-title strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus">[children]</a></span>');			
+			var lsize = jQuery('#the-list').find('[data-parent="' + id + '"]').size();
+			if(lsize > 0)
+				jQuery(this).find('.page-title strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus">[children]</a>'+lsize+'</span>');			
 		});
 		
 		/*
@@ -67,7 +68,7 @@ jQuery().ready(function($){
 			var post_id = row.attr('data-post-id');
 				
 			jQuery(this).children('a').toggleClass('minus');	
-				
+			console.log(row,post_id);
 			if(row.attr('data-collapsed') == 0)
 			{	
 				//make cookie here
@@ -168,7 +169,8 @@ jQuery().ready(function($){
 		});
 	}	
 	function expand_subpages(parent_id)
-	{		
+	{	
+
 		jQuery('#the-list').find('[data-parent="' + parent_id + '"]').each(function(){
 			
 			jQuery(this).show();
