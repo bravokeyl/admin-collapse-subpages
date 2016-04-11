@@ -1,22 +1,22 @@
-=== Admin Collapse Subpages ===
+# Admin Collapse Subpages
 
-Contributors:  bravokeyl ,lupka 
+- Contributors:  bravokeyl ,lupka 
 
-Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
+- Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
 
-Requires at least: 3.0
+- Requires at least: 3.0
 
-Tested up to: 4.1
+- Tested up to: 4.5
 
-Stable tag: trunk
+- Stable tag: trunk
 
-License: GPLv2 or later
+- License: GPLv2 or later
 
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Using this plugin one can easily collapse/expand pages with children and grand children.
 
-== Description ==
+## Description
 
 Simple plugin that allows you to collapse subpages in the Pages admin list also for custom post types that are heirarchial. Especially helpful if you have a ton of pages /cpt's with heiararchial set to true. It uses a cookie to save the expand/collapse status of your pages.
 
@@ -24,50 +24,46 @@ This is loosely based on Collapse Sub-Pages by Dan Dietz, which broke with the 3
 
 Because this is a jQuery, it's possible that they could make additional changes that would break it. I'll do my best to stay on top of it, but let me know if it stops working.
 
-What's new in Version 2.0 ?
+** What's new in Version 2.0 ? **
 
-1)Fix en-queuing of scripts .
-2)Expand all , Collapse all links appear only on the pages list not on every list (like plugins ,posts etc.,)
-3)Updated jQuery.cookie.js to 1.4.0
+- Fix en-queuing of scripts .
+- Expand all , Collapse all links appear only on the pages list not on every list (like plugins ,posts etc.,)
+- Updated jQuery.cookie.js to 1.4.0
 
-== Installation ==
+## Installation
 
-1. Download, unzip, and upload the 'admin-collapse-subpages' folder along with all its files to the '/wp-content/plugins/'' directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Visit your Pages admin page and notice the lovely +/- buttons.
+- Download, unzip, and upload the 'admin-collapse-subpages' folder along with all its files to the '/wp-content/plugins/'' directory.
+- Activate the plugin through the 'Plugins' menu in WordPress.
+- Visit your Pages admin page and notice the lovely +/- buttons.
 
-== Frequently Asked Questions ==
-
-= Why is there a delay after I use "Quick Edit"? =
+## Frequently Asked Questions
+(TO DO)
+### Why is there a delay after I use "Quick Edit"? 
 
 The WordPress Quick Edit functionality is a little buggy in my opinion. To make a long story short, this delay is so that WordPress can complete the edit(and any possible parent changes) before refreshing the expand/collapse status.
 I'd recommend not using Quick Edit to change parent/child pages at all. It often doesn't refresh any changed rows properly.
 
-== Screenshots ==
+## Screenshots
 
-1. Example Edit Page menu.
-2. Same menu with a group of subpages minimized.
-3. Same menu completely minimized.
-4. Expand/collapse all buttons at the top of the page.
+- Example Edit Page menu.
+- Same menu with a group of subpages minimized.
+- Same menu completely minimized.
+- Expand/collapse all buttons at the top of the page.
 
-== Changelog ==
+## Changelog
 
-= 1.0 =
+### 1.0
+
 * Initial version of the plugin
 
-= 2.0 =
+### 2.0
+
 * Fixed bug - Adding expand/collapse links to all list tables
 * Updated jquery.cookie.js to 1.4.0
 * Enhanced loading of scripts and styles 
-= 2.1 =
-* Added support custom post types which are hieararchial
-== Upgrade Notice ==
 
-= 1.0 =
-* N/A
-= 2.0 =
-* Enjoy !!
-= 2.1 =
+### 2.1
+
 * Added support custom post types which are hieararchial
-= 2.1 =
-* Added support custom post types which are hieararchial
+
+## Upgrade Notice
