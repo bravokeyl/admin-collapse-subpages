@@ -46,7 +46,7 @@ jQuery().ready(function($){
 	
 			var lsize = jQuery('#the-list').find('[data-parent="' + id + '"]').size();
 			if(lsize > 0)
-				jQuery(this).find('.page-title strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus">[children]</a>'+lsize+'</span>');			
+				jQuery(this).find('.page-title strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus">[children]</a></span><span class="acp_count">('+lsize+')</span>');			
 		});
 		
 		/*
