@@ -58,6 +58,17 @@ I'd recommend not using Quick Edit to change parent/child pages at all. It often
 
 == Changelog ==
 
+= 2.4 =
+
+** New
+
+* Added support for category pages
+
+** Changed
+
+* Used localStorage instead of jquery.cookie
+* Used dashicons for plus/minus instead of images
+
 = 2.1 =
 * Added support custom post types which are hierarchical
 
@@ -69,8 +80,6 @@ I'd recommend not using Quick Edit to change parent/child pages at all. It often
 = 1.0 =
 * Initial version of the plugin
 
-
-
-
-
 == Upgrade Notice ==
+
+* Nothing to worry
