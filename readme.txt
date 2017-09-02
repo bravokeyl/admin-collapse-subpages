@@ -1,9 +1,9 @@
 === Admin Collapse Subpages ===
-Contributors: lupka , bravokeyl
-Donate link: http://alexchalupka.com/donate
+Contributors: bravokeyl, lupka
+Donate link: https://bravokeyl.com/contact/
 Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
-Requires at least: 3.0
-Tested up to: 4.6.1
+Requires at least: 4.6
+Tested up to: 4.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ Using this plugin one can easily collapse/expand pages with children and grand c
 
 Simple plugin that allows you to collapse subpages in the Pages admin list also for custom post types that are heirarchial. Especially helpful if you have a ton of pages /cpt's with heiararchial set to true. It uses a cookie to save the expand/collapse status of your pages.
 
-This is loosely based on Collapse Sub-Pages by Dan Dietz, which broke with the 3.0 upgrade due to UI changes and hasn't been updated. I've had to rewrite the jQuery to make it work with 3.x versions. 
+This is loosely based on Collapse Sub-Pages by Dan Dietz, which broke with the 3.0 upgrade due to UI changes and hasn't been updated. I've had to rewrite the jQuery to make it work with 3.x versions.
 
 Because this is a jQuery, it's possible that they could make additional changes that would break it. I'll do my best to stay on top of it, but let me know if it stops working.
 
@@ -22,7 +22,7 @@ Because this is a jQuery, it's possible that they could make additional changes 
 <h3>Plugin in your Language</h3>
 From version 2.3 our plugin supports internationalization, which means you can have plugin in your specified language.
 
-It's currently available in US English ,UK Englih, Chinese, Telugu , Serbian.
+It's currently available in US English ,UK English, Chinese, Telugu , Serbian.
 
 <h3>Support us by Translating</h3>
 Go <a href="https://translate.wordpress.org/projects/wp-plugins/admin-collapse-subpages">here</a> and translate into your language.
@@ -58,24 +58,19 @@ I'd recommend not using Quick Edit to change parent/child pages at all. It often
 
 == Changelog ==
 
-= 1.0 =
-* Initial version of the plugin
+= 2.1 =
+* Added support custom post types which are hierarchical
 
 = 2.0 =
 * Fixed bug - Adding expand/collapse links to all list tables
 * Updated jquery.cookie.js to 1.4.0
-* Enhanced loading of scripts and styles 
-= 2.1 =
-* Added support custom post types which are hieararchial
-== Upgrade Notice ==
+* Enhanced loading of scripts and styles
 
 = 1.0 =
-* N/A
-= 2.0 =
-* Enjoy !!
-= 2.1 =
-* Added support custom post types which are hieararchial
-= 2.1 =
-* Added support custom post types which are hieararchial
-= 2.3 =
-* Internationalizing the plugin
+* Initial version of the plugin
+
+
+
+
+
+== Upgrade Notice ==

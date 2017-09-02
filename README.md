@@ -1,12 +1,12 @@
 # Admin Collapse Subpages
 
-- Contributors:  bravokeyl ,lupka 
+- Contributors:  bravokeyl, lupka
 
 - Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
 
-- Requires at least: 3.0
+- Requires at least: 4.6
 
-- Tested up to: 4.5
+- Tested up to: 4.8.1
 
 - Stable tag: trunk
 
@@ -20,7 +20,7 @@ Using this plugin one can easily collapse/expand pages with children and grand c
 
 Simple plugin that allows you to collapse subpages in the Pages admin list also for custom post types that are heirarchial. Especially helpful if you have a ton of pages /cpt's with heiararchial set to true. It uses a cookie to save the expand/collapse status of your pages.
 
-This is loosely based on Collapse Sub-Pages by Dan Dietz, which broke with the 3.0 upgrade due to UI changes and hasn't been updated. I've had to rewrite the jQuery to make it work with 3.x versions. 
+This is loosely based on Collapse Sub-Pages by Dan Dietz, which broke with the 3.0 upgrade due to UI changes and hasn't been updated. I've had to rewrite the jQuery to make it work with 3.x versions.
 
 Because this is a jQuery, it's possible that they could make additional changes that would break it. I'll do my best to stay on top of it, but let me know if it stops working.
 
@@ -38,7 +38,7 @@ Because this is a jQuery, it's possible that they could make additional changes 
 
 ## Frequently Asked Questions
 (TO DO)
-### Why is there a delay after I use "Quick Edit"? 
+### Why is there a delay after I use "Quick Edit"?
 
 The WordPress Quick Edit functionality is a little buggy in my opinion. To make a long story short, this delay is so that WordPress can complete the edit(and any possible parent changes) before refreshing the expand/collapse status.
 I'd recommend not using Quick Edit to change parent/child pages at all. It often doesn't refresh any changed rows properly.
@@ -60,7 +60,7 @@ I'd recommend not using Quick Edit to change parent/child pages at all. It often
 
 * Fixed bug - Adding expand/collapse links to all list tables
 * Updated jquery.cookie.js to 1.4.0
-* Enhanced loading of scripts and styles 
+* Enhanced loading of scripts and styles
 
 ### 2.1
 

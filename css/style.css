@@ -1,15 +1,16 @@
-/* simple styles for  +/- links */
-
-.expand_link a{
-	display:inline-block;
-	width: 16px;
-	height: 16px;
-	margin:0 0 0 10px;
-	text-indent: -9999px;
-	background: url(../images/plus.png) no-repeat top left transparent;
-	padding:2px;
+.expand_link a {
+    display: inline-block;
+		font-family: dashicons;
+		font-size: 16px;
+    line-height: 1;
+		height: 16px;
+		width: 16px;
+    margin: 0 0 0 10px;
+		vertical-align: middle;
 }
-
-.expand_link a.minus{
-	background: url(../images/minus.png) no-repeat top left transparent;
+.expand_link a:before {
+		content: "\f132";
+}
+.expand_link a.minus:before {
+    content: "\f460";
 }
