@@ -41,19 +41,19 @@ if (!class_exists('Admin_Collapse_Subpages')) {
 				 global $pagenow;
 
 					if(isset($_GET['post_type']) || isset($_GET['taxonomy'])) {
-					 	$post_type = $_GET['post_type'];
-					 	if(is_post_type_hierarchical($post_type)) {
-					 		add_filter( 'admin_body_class', 'acs_admin_body_class' );
-					 	}
+						if(isset($_GET['post_type'])) {
+							$post_type = $_GET['post_type'];
+						 	if(is_post_type_hierarchical($post_type)) {
+						 		add_filter( 'admin_body_class', 'acs_admin_body_class' );
+						 	}
+						}
 						if(isset($_GET['taxonomy']) && isset($_GET['taxonomy']) == 'category') {
 							add_filter( 'admin_body_class', 'acs_admin_body_class' );
 						}
-
 						function acs_admin_body_class( $classes ) {
 						    $classes .= ' ' .'acs-hier';
 						    return $classes;
 						}
-
 				 	}
 
 					if ( is_admin() && ( (isset($_GET['post_type']) && $pagenow =='edit.php') || $pagenow =='edit-tags.php' ) ) {
