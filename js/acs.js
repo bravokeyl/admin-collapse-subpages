@@ -16,7 +16,6 @@ jQuery(document).ready(function($) {
      */
      var acs;
      acs_get();
-     console.log("ACS",acs);
      initial_collapse_work();
      reset_listeners();
 
@@ -77,9 +76,7 @@ jQuery(document).ready(function($) {
         jQuery('.acs-hier .tags #the-list tr').each(function() {
 
             var id = jQuery(this).find('.check-column input').attr('value');
-            // console.log(jQuery('#the-list').find('[data-parent="' + id + '"]').length);
             if (jQuery('#the-list').find('[data-parent="' + id + '"]').length > 0) {
-              // console.log(jQuery('#the-list').find('[data-parent="' + id + '"]'));
               jQuery(this).find('.name strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus"></a></span>');
             }
 
@@ -102,11 +99,9 @@ jQuery(document).ready(function($) {
             acs_get();
             var row = jQuery(this).closest('tr');
             var acs_id = row.attr('data-acs-id');
-            console.log("Link clicked",row,acs_id);
             jQuery(this).children('a').toggleClass('minus');
 
             if (row.attr('data-collapsed') == 0) {
-                console.log("ACSSS",acs);
                 if(jQuery('.acs-hier .tags').length) {
                   if(acs.cid) {
                     acs.cid.push(acs_id);
@@ -116,13 +111,10 @@ jQuery(document).ready(function($) {
                     acs.pid.push(acs_id);
                   }
                 }
-
-                console.log(acs);
                 localStorage.setItem("acs",JSON.stringify(acs));
                 collapse_subpages(acs_id);
                 row.attr('data-collapsed', 1);
             } else {
-                console.log("Already collapsed",acs);
                 if(jQuery('.acs-hier .tags').length) {
                   acs.cid = acs.cid.filter(function(e,i){
                     return e != acs_id;
@@ -149,8 +141,6 @@ jQuery(document).ready(function($) {
              */
             setTimeout(function() {
 
-                //console.log(jQuery('#the-list tr'));
-
                 jQuery('#the-list tr').show();
                 jQuery('.expand_link').remove();
 
@@ -166,19 +156,15 @@ jQuery(document).ready(function($) {
          * Expand and collapse all links
          */
         jQuery('.expand_all_link a').click(function() {
-            console.log("EXPAND ALL");
             expand_all();
         });
         jQuery('.acs-expand-all').click(function() {
-            console.log("EXPAND ALL");
             expand_all();
         });
         jQuery('.collapse_all_link a').click(function() {
-          console.log("COLLAPSE ALL");
             collapse_all();
         });
         jQuery('.acs-collapse-all').click(function() {
-          console.log("COLLAPSE ALL");
             collapse_all();
         });
     }
@@ -206,7 +192,6 @@ jQuery(document).ready(function($) {
         });
 
         localStorage.setItem('acs',JSON.stringify(acs));
-        console.log("Epola",ids,acs);
     }
 
     function expand_all() {
@@ -240,7 +225,6 @@ jQuery(document).ready(function($) {
           })
         });
         localStorage.setItem('acs',JSON.stringify(acs));
-        console.log("Coola",ids,acs);
     }
 
     /*
@@ -274,7 +258,6 @@ jQuery(document).ready(function($) {
      */
     function collapse_from_cookie(cat) {
         var acsLocal = JSON.parse(localStorage.getItem("acs"));
-        console.log(acsLocal);
         if(acsLocal) {
           var ids;
           if(cat){
@@ -282,7 +265,6 @@ jQuery(document).ready(function($) {
           } else {
             ids = acsLocal.pid;
           }
-          console.log(ids);
           jQuery.each(ids, function(i,v){
             jQuery('#the-list').find('[data-acs-id="' + v + '"]').attr('data-collapsed', 1).find('.expand_link a').toggleClass('minus');
           });
