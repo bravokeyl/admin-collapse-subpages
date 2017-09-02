@@ -13,8 +13,3 @@
 .expand_link a.minus{
 	background: url(../images/minus.png) no-repeat top left transparent;
 }
-
-.acp_count {
-	font-size: 0.85em;
-	font-weight: normal;
-}

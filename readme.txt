@@ -3,7 +3,7 @@ Contributors: lupka , bravokeyl
 Donate link: http://alexchalupka.com/donate
 Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
 Requires at least: 3.0
-Tested up to: 4.5
+Tested up to: 4.6.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,10 +25,7 @@ From version 2.3 our plugin supports internationalization, which means you can h
 It's currently available in US English ,UK Englih, Chinese, Telugu , Serbian.
 
 <h3>Support us by Translating</h3>
-Want this plugin in your language , just translate the following two words and send us a mail.
-
-1) Expand All
-2) Collapse All
+Go <a href="https://translate.wordpress.org/projects/wp-plugins/admin-collapse-subpages">here</a> and translate into your language.
 
 <h3>Special Thanks</h3>
 We specially thank <a href="http://www.webhostinghub.com/" target="_blank">Borisa Djuraskovic</a> for translating this plugin in Serbian Language.
