@@ -3,7 +3,7 @@ Contributors: bravokeyl, lupka
 Donate link: https://bravokeyl.com/contact/
 Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
 Requires at least: 4.6
-Tested up to: 4.8.1
+Tested up to: 4.9.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
