@@ -6,7 +6,7 @@
 
 - Requires at least: 4.6
 
-- Tested up to: 4.8.1
+- Tested up to: 4.9.4
 
 - Stable tag: trunk
 
